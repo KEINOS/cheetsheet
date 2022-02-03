@@ -2,7 +2,7 @@
 
 ---
 
-# Raspberry Pi CheetSheet
+# RaspberryPi CheetSheet
 
 This is a memorandum for KEINOS.
 

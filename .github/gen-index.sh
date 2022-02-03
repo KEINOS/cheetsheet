@@ -35,6 +35,7 @@ cd "${PATH_DIR_REPO_ROOT}" || {
     exit 1
 }
 
+# Overwrite index.md with the below script
 {
     # Print a header indicating that it has been generated automatically.
     printf "<!-- Code generated using /.github/gen-index.sh; DO NOT EDIT. -->\n\n"
@@ -58,6 +59,6 @@ cd "${PATH_DIR_REPO_ROOT}" || {
     echo '* View the repository: [github.com/KEINOS/cheetsheets](https://github.com/KEINOS/cheetsheet) @ GitHub'
     echo '* Table of contents created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)' @ GitHub
 
-} >>"${PATH_FILE_INDEX}"
+} >"${PATH_FILE_INDEX}"
 
 cat "${PATH_FILE_INDEX}" && echo "${HR}\ndone."

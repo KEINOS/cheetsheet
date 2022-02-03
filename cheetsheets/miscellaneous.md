@@ -2,10 +2,11 @@
 
 ---
 
-# General CheetSheet (Miscellaneous)
+# General/Miscellaneous
 
 This is a memorandum for KEINOS.
 
 ## Markdown
 
-- [Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d) @ Qiita
+- [Qiita Flavored Markdown](https://qiita.com/Qiita/items/c686397e4a0f4f11683d) @ Qiita
+- [GitHub Flavored Markdown](https://github.github.com/gfm/) | Official @ GitHub

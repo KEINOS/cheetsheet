@@ -2,13 +2,11 @@
 
 ---
 
-# macOS CheetSheet (General)
+# macOS CheetSheet
 
 This is a memorandum for KEINOS.
 
 ## Get OS version info
-
-OS の バージョン情報を取得する。
 
 ```shellsession
 $ sw_vers
