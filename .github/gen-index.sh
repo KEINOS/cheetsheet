@@ -37,7 +37,12 @@ cd "${PATH_DIR_REPO_ROOT}" || {
 
 {
     # Print a header indicating that it has been generated automatically.
-    printf "<!-- Code generated using /.github/gen-index.sh; DO NOT EDIT. -->\n" >"${PATH_FILE_INDEX}"
+    printf "<!-- Code generated using /.github/gen-index.sh; DO NOT EDIT. -->\n\n"
+
+    # Add Spanish translation
+    printf "%s\n" "[![Español](https://shields.io/badge/-Espa%C3%B1ol-informational)](https://keinos-github-io.translate.goog/cheetsheet/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es \"Leer en español\")"
+    printf "%s\n" "[![日本語](https://shields.io/badge/-%E6%97%A5%E6%9C%AC%E8%AA%9E-informational)](https://keinos-github-io.translate.goog/cheetsheet/?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja \"日本語で読む\")"
+    printf "\n"
 
     # Add H1 title
     printf "# CheetSheet of KEINOS\n\n"

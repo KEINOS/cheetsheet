@@ -1,0 +1,16 @@
+# =============================================================================
+#  Custom rules of Markdown-Lint
+# =============================================================================
+
+# MD041/first-line-heading/first-line-h1 - First line in a file should be a top-level heading
+MD041: false
+
+# MD033/no-inline-html - Inline HTML
+MD033: false
+
+# MD013/line-length - Line length
+MD013:
+  # Number of characters
+  line_length: 120
+  # Number of characters for headings
+  heading_line_length: 80

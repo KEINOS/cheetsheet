@@ -1,8 +1,7 @@
-<!-- markdownlint-disable MD041 -->
 [INDEX](../)
 
 ---
 
-# General Linux CheetSheet
+# Linux CheetSheet (General)
 
 This is a memorandum for KEINOS.
