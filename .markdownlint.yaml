@@ -14,3 +14,5 @@ MD013:
   line_length: 120
   # Number of characters for headings
   heading_line_length: 80
+  # Do not check code blocks
+  code_blocks: false
