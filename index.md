@@ -16,9 +16,10 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)
+  * [MarkdownLint](./cheetsheets/miscellaneous.md#markdownlint)
 
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
-  * [電力不足確認](./cheetsheets/raspberrypi.md#電力不足確認)
+  * [How to check the voltage status](./cheetsheets/raspberrypi.md#how-to-check-the-voltage-status)
 
 ---
 
