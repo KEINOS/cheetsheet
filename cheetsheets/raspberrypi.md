@@ -21,4 +21,10 @@ vcgencmd get_throttled
 | `0x80008` | Currently, the clock speed slows down due to heat. |
 
 - Reference:
-  [get_throttled](https://www.raspberrypi.com/documentation/computers/os.html#get_throttled) | `vcgencmd` | Doc @ aspberrypi.com
+  [get_throttled](https://www.raspberrypi.com/documentation/computers/os.html#get_throttled) | `vcgencmd` | Doc @ raspberrypi.com
+
+## Configuration
+
+### raspi-config
+
+- [configuation](https://www.raspberrypi.com/documentation/computers/configuration.html) | Doc @ raspberrypi.com

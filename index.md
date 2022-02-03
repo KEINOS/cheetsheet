@@ -20,6 +20,8 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
   * [How to check the voltage status](./cheetsheets/raspberrypi.md#how-to-check-the-voltage-status)
+  * [Configuration](./cheetsheets/raspberrypi.md#configuration)
+    * [raspi\-config](./cheetsheets/raspberrypi.md#raspi-config)
 
 ---
 
