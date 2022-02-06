@@ -29,3 +29,14 @@ This is a memorandum for KEINOS.
         # Number of characters
         line_length: 120
     ```
+
+## Git
+
+### Append a commit to the previous commit
+
+1 つ前のコミットに追加する方法。
+
+```bash
+git commit --amend --no-edit
+git push --force
+```

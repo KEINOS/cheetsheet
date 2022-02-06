@@ -6,6 +6,12 @@
 
 This is a memorandum for KEINOS.
 
+## RaspberryPi Imager
+
+### Advanced Mode
+
+- `ctrl` + `shift` + `x`: To setup SSH, WiFi, Country Code, Timezone, etc.
+
 ## How to check the voltage status
 
 ```bash
@@ -28,3 +34,7 @@ vcgencmd get_throttled
 ### raspi-config
 
 - [configuation](https://www.raspberrypi.com/documentation/computers/configuration.html) | Doc @ raspberrypi.com
+
+### Enable 64bit OS
+
+- `/boot/config.txt`: Add `arm_64bit=1`

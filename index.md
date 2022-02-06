@@ -17,11 +17,16 @@ This is a memorandum/cheet-sheet for KEINOS.
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)
   * [MarkdownLint](./cheetsheets/miscellaneous.md#markdownlint)
+  * [Git](./cheetsheets/miscellaneous.md#git)
+    * [Append a commit to the previous commit](./cheetsheets/miscellaneous.md#append-a-commit-to-the-previous-commit)
 
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
+  * [RaspberryPi Imager](./cheetsheets/raspberrypi.md#raspberrypi-imager)
+    * [Advanced Mode](./cheetsheets/raspberrypi.md#advanced-mode)
   * [How to check the voltage status](./cheetsheets/raspberrypi.md#how-to-check-the-voltage-status)
   * [Configuration](./cheetsheets/raspberrypi.md#configuration)
     * [raspi\-config](./cheetsheets/raspberrypi.md#raspi-config)
+    * [Enable 64bit OS](./cheetsheets/raspberrypi.md#enable-64bit-os)
 
 ---
 
