@@ -1,5 +1,5 @@
 # =============================================================================
-#  Custom rules of Markdown-Lint
+#  Custom rules of Markdown-Lint (Disabled rules)
 # =============================================================================
 
 # MD041/first-line-heading/first-line-h1 - First line in a file should be a top-level heading
@@ -16,3 +16,6 @@ MD013:
   heading_line_length: 80
   # Do not check code blocks
   code_blocks: false
+
+# MD010/no-hard-tabs - Hard tabs
+MD010: false
