@@ -9,10 +9,13 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 ## Index
 
-* [Linux CheetSheet](./cheetsheets/linux-general.md#linux-cheetsheet)
+* [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
+  * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
 
-* [macOS CheetSheet](./cheetsheets/macos-general.md#macos-cheetsheet)
-  * [Get OS version info](./cheetsheets/macos-general.md#get-os-version-info)
+* [Linux CheetSheet](./cheetsheets/linux.md#linux-cheetsheet)
+
+* [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
+  * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)
 
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)
