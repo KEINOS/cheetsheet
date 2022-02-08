@@ -13,6 +13,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
 
 * [Linux CheetSheet](./cheetsheets/linux.md#linux-cheetsheet)
+  * [Command Alias](./cheetsheets/linux.md#command-alias)
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
   * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)
