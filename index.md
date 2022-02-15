@@ -12,6 +12,10 @@ This is a memorandum/cheet-sheet for KEINOS.
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
 
+* [IPFS](./cheetsheets/ipfs.md#ipfs)
+  * [Wrap files with a directory object when adding to IPFS](./cheetsheets/ipfs.md#wrap-files-with-a-directory-object-when-adding-to-ipfs)
+  * [View all pinned files](./cheetsheets/ipfs.md#view-all-pinned-files)
+
 * [Linux CheetSheet](./cheetsheets/linux.md#linux-cheetsheet)
   * [Command Alias](./cheetsheets/linux.md#command-alias)
   * [AlpineLinux](./cheetsheets/linux.md#alpinelinux)
