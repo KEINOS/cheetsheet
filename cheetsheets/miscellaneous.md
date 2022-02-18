@@ -40,3 +40,25 @@ This is a memorandum for KEINOS.
 git commit --amend --no-edit
 git push --force
 ```
+
+### Create Orphan Branch
+
+```bash
+git checkout --orphan <new-branch-name>
+```
+
+### Rename branch from "master" to "main"
+
+1. Change the name and push the branch as below.
+
+  ```bash
+  # Rename
+  git branch -m master main
+  git push -u origin main
+  ```
+
+2. Go to GitHub and change the default branch to main.
+
+  * `[Settings]-[Branches]-[Default branch]`
+
+3. Delete the old "master" branch.

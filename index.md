@@ -28,6 +28,8 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [MarkdownLint](./cheetsheets/miscellaneous.md#markdownlint)
   * [Git](./cheetsheets/miscellaneous.md#git)
     * [Append a commit to the previous commit](./cheetsheets/miscellaneous.md#append-a-commit-to-the-previous-commit)
+    * [Create Orphan Branch](./cheetsheets/miscellaneous.md#create-orphan-branch)
+    * [Rename branch from "master" to "main"](./cheetsheets/miscellaneous.md#rename-branch-from-master-to-main)
 
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
   * [RaspberryPi Imager](./cheetsheets/raspberrypi.md#raspberrypi-imager)
