@@ -11,6 +11,7 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
+  * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
 
 * [IPFS](./cheetsheets/ipfs.md#ipfs)
   * [Wrap files with a directory object when adding to IPFS](./cheetsheets/ipfs.md#wrap-files-with-a-directory-object-when-adding-to-ipfs)
