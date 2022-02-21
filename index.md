@@ -11,6 +11,7 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
+  * [Get imported module's version from the code](./cheetsheets/golang.md#get-imported-modules-version-from-the-code)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
 
 * [IPFS](./cheetsheets/ipfs.md#ipfs)

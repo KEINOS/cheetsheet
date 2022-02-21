@@ -45,6 +45,44 @@ func main() {
 }
 ```
 
+## Get imported module's version from the code
+
+```go
+mods := []*debug.Module{}
+
+if buildInfo, ok := debug.ReadBuildInfo(); ok {
+  mods = buildInfo.Deps
+}
+
+if len(mods) == 0 {
+  dummyMod := &debug.Module{
+    Path:    "n/a",
+    Version: "n/a",
+    Sum:     "n/a",
+  }
+
+  mods = []*debug.Module{
+    dummyMod,
+  }
+}
+
+getModName := func(modDep *debug.Module) string {
+  // module name without leading version in a path
+  noVer := strings.ReplaceAll(modDep.Path, "/"+modDep.Version, "")
+
+  return filepath.Base(noVer)
+}
+
+modsFound := map[string]debug.Module{}
+
+for _, modDep := range mods {
+  name := getModName(modDep)
+  modsFound[name] = *modDep
+}
+
+return modsFound
+```
+
 ## Field Names/Variables of GoReleaser
 
 List of available field names in GoReleaser's config file. Such as `{{ .Version }}` `{{ .Tag }}`, for example.
