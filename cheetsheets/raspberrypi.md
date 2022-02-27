@@ -37,4 +37,10 @@ vcgencmd get_throttled
 
 ### Enable 64bit OS
 
-- `/boot/config.txt`: Add `arm_64bit=1`
+- Add `arm_64bit=1` @ `/boot/config.txt`
+
+### Add user
+
+```bash
+
+```

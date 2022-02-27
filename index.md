@@ -15,11 +15,26 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
 
 * [IPFS](./cheetsheets/ipfs.md#ipfs)
+  * [List peer nodes (Observe peers)](./cheetsheets/ipfs.md#list-peer-nodes-observe-peers)
   * [Wrap files with a directory object when adding to IPFS](./cheetsheets/ipfs.md#wrap-files-with-a-directory-object-when-adding-to-ipfs)
   * [View all pinned files](./cheetsheets/ipfs.md#view-all-pinned-files)
+  * [How to generate swarm\-key for private IPFS network](./cheetsheets/ipfs.md#how-to-generate-swarm-key-for-private-ipfs-network)
+  * [How to set swarm\-key for JS\-IPFS](./cheetsheets/ipfs.md#how-to-set-swarm-key-for-js-ipfs)
+
+* [K3OS](./cheetsheets/kubernetes.md#k3os)
+  * [Set password](./cheetsheets/kubernetes.md#set-password)
+  * [SSH Access](./cheetsheets/kubernetes.md#ssh-access)
+  * [Login via SSH with GitHub account](./cheetsheets/kubernetes.md#login-via-ssh-with-github-account)
+  * [Shutdown](./cheetsheets/kubernetes.md#shutdown)
+  * [View nodes](./cheetsheets/kubernetes.md#view-nodes)
+  * [Path of the key (Node Token) to share with other nodes](./cheetsheets/kubernetes.md#path-of-the-key-node-token-to-share-with-other-nodes)
+  * [Set up worker node](./cheetsheets/kubernetes.md#set-up-worker-node)
+  * [Install Rancher on VM](./cheetsheets/kubernetes.md#install-rancher-on-vm)
 
 * [Linux CheetSheet](./cheetsheets/linux.md#linux-cheetsheet)
   * [Command Alias](./cheetsheets/linux.md#command-alias)
+  * [How to check users in a Linux system](./cheetsheets/linux.md#how-to-check-users-in-a-linux-system)
+  * [How to get the filesystem name of the root directory's partition](./cheetsheets/linux.md#how-to-get-the-filesystem-name-of-the-root-directorys-partition)
   * [AlpineLinux](./cheetsheets/linux.md#alpinelinux)
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
@@ -40,6 +55,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Configuration](./cheetsheets/raspberrypi.md#configuration)
     * [raspi\-config](./cheetsheets/raspberrypi.md#raspi-config)
     * [Enable 64bit OS](./cheetsheets/raspberrypi.md#enable-64bit-os)
+    * [Add user](./cheetsheets/raspberrypi.md#add-user)
 
 ---
 
