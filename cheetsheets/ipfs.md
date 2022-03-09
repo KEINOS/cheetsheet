@@ -4,6 +4,16 @@
 
 # IPFS
 
+## Create IPFS system user with no home
+
+```sh
+sudo useradd -m -r -s /sbin/nologin ipfs
+```
+
+## Create IPFS systemd service
+
+- https://github.com/ipfs/go-ipfs/blob/master/misc/systemd/ipfs.service
+
 ## List peer nodes (Observe peers)
 
 ```bash

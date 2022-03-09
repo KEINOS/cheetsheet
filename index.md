@@ -9,12 +9,22 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 ## Index
 
+* [Git](./cheetsheets/git.md#git)
+  * [Append a commit to the previous commit](./cheetsheets/git.md#append-a-commit-to-the-previous-commit)
+  * [Create Orphan Branch](./cheetsheets/git.md#create-orphan-branch)
+  * [Rename branch from "master" to "main"](./cheetsheets/git.md#rename-branch-from-master-to-main)
+
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
   * [Get imported module's version from the code](./cheetsheets/golang.md#get-imported-modules-version-from-the-code)
+  * [How to get content like cURL](./cheetsheets/golang.md#how-to-get-content-like-curl)
+  * [How to return error response in httptest\.NewServer during test](./cheetsheets/golang.md#how-to-return-error-response-in-httptestnewserver-during-test)
+  * [How to sleep a second](./cheetsheets/golang.md#how-to-sleep-a-second)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
 
 * [IPFS](./cheetsheets/ipfs.md#ipfs)
+  * [Create IPFS system user with no home](./cheetsheets/ipfs.md#create-ipfs-system-user-with-no-home)
+  * [Create IPFS systemd service](./cheetsheets/ipfs.md#create-ipfs-systemd-service)
   * [List peer nodes (Observe peers)](./cheetsheets/ipfs.md#list-peer-nodes-observe-peers)
   * [Wrap files with a directory object when adding to IPFS](./cheetsheets/ipfs.md#wrap-files-with-a-directory-object-when-adding-to-ipfs)
   * [View all pinned files](./cheetsheets/ipfs.md#view-all-pinned-files)
@@ -35,6 +45,11 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Command Alias](./cheetsheets/linux.md#command-alias)
   * [How to check users in a Linux system](./cheetsheets/linux.md#how-to-check-users-in-a-linux-system)
   * [How to get the filesystem name of the root directory's partition](./cheetsheets/linux.md#how-to-get-the-filesystem-name-of-the-root-directorys-partition)
+  * [systemd](./cheetsheets/linux.md#systemd)
+    * [How to check systemctl error log](./cheetsheets/linux.md#how-to-check-systemctl-error-log)
+    * [View all services' status](./cheetsheets/linux.md#view-all-services-status)
+    * [View service log](./cheetsheets/linux.md#view-service-log)
+    * [Reasons to get "Active: inactive (dead)"](./cheetsheets/linux.md#reasons-to-get-active-inactive-dead)
   * [AlpineLinux](./cheetsheets/linux.md#alpinelinux)
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
@@ -43,10 +58,8 @@ This is a memorandum/cheet-sheet for KEINOS.
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)
   * [MarkdownLint](./cheetsheets/miscellaneous.md#markdownlint)
-  * [Git](./cheetsheets/miscellaneous.md#git)
-    * [Append a commit to the previous commit](./cheetsheets/miscellaneous.md#append-a-commit-to-the-previous-commit)
-    * [Create Orphan Branch](./cheetsheets/miscellaneous.md#create-orphan-branch)
-    * [Rename branch from "master" to "main"](./cheetsheets/miscellaneous.md#rename-branch-from-master-to-main)
+  * [VSCode](./cheetsheets/miscellaneous.md#vscode)
+    * [Comment out/in the selected code on macOS](./cheetsheets/miscellaneous.md#comment-outin-the-selected-code-on-macos)
 
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
   * [RaspberryPi Imager](./cheetsheets/raspberrypi.md#raspberrypi-imager)

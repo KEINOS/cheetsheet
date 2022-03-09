@@ -83,6 +83,52 @@ for _, modDep := range mods {
 return modsFound
 ```
 
+## How to get content like `cURL`
+
+```go
+response, err := http.Get(c.EndpointURL)
+if err != nil {
+  return nil, errors.Wrap(err, "failed to GET HTTP request")
+}
+
+defer response.Body.Close()
+
+// Read responce body
+resBody, err := io.ReadAll(response.Body)
+if err != nil {
+  return nil, errors.Wrap(err, "fail to read response")
+}
+
+if response.StatusCode != http.StatusOK {
+  return nil, errors.Errorf(
+    "fail to GET response from: %v\nStatus: %v\nResponse body: %v",
+    c.EndpointURL,
+    response.Status,
+    string(resBody),
+  )
+}
+
+fmt.Println(string(resBody))
+```
+
+## How to return error response in httptest.NewServer during test
+
+```go
+dummySrv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+    w.WriteHeader(http.StatusBadRequest)
+    fmt.Fprintf(w, "invalid request")
+
+    // return is not needed. it will be redundant
+}))
+defer dummySrv.Close()
+```
+
+## How to sleep a second
+
+```go
+time.Sleep(1 * time.Second)
+```
+
 ## Field Names/Variables of GoReleaser
 
 List of available field names in GoReleaser's config file. Such as `{{ .Version }}` `{{ .Tag }}`, for example.

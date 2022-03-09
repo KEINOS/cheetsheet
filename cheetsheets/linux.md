@@ -35,6 +35,37 @@ $ df -l / | grep dev | awk '{ print $1 }'
 
 - Tested on Ubuntu 20.04
 
+## systemd
+
+### How to check systemctl error log
+
+```bash
+journalctl | grep <service>
+```
+
+### View all services' status
+
+```bash
+systemctl list-unit-files --type=service
+```
+
+### View service log
+
+```bash
+sudo journalctl -f -u <service>
+
+# Example
+journalctl -fu ipfs.service
+```
+
+### Reasons to get "Active: inactive (dead)"
+
+- You mey not be anabled to use the service.
+
+```bash
+sudo systemctl status <service>
+```
+
 ## AlpineLinux
 
 This is a list of basic apk packages that must be installed to develop and build Go applications on Alpine Linux.

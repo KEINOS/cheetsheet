@@ -17,7 +17,7 @@ This is a memorandum for KEINOS.
 - Exclusion of rules by name.
 
   ```bash
-  <!-- markdownlint-disable-file MD001 -->
+  <!-- markdownlint-disable-file MD001 MD033-->
   ```
 
 - Exclusion of rules by file.
@@ -30,35 +30,9 @@ This is a memorandum for KEINOS.
         line_length: 120
     ```
 
-## Git
+## VSCode
 
-### Append a commit to the previous commit
+### Comment out/in the selected code on macOS
 
-1 つ前のコミットに追加する方法。
-
-```bash
-git commit --amend --no-edit
-git push --force
-```
-
-### Create Orphan Branch
-
-```bash
-git checkout --orphan <new-branch-name>
-```
-
-### Rename branch from "master" to "main"
-
-1. Change the name and push the branch as below.
-
-  ```bash
-  # Rename
-  git branch -m master main
-  git push -u origin main
-  ```
-
-2. Go to GitHub and change the default branch to main.
-
-  * `[Settings]-[Branches]-[Default branch]`
-
-3. Delete the old "master" branch.
+- Comment out: ⌘ + K --> ⌘ + C
+- Un-comment: ⌘ + K --> ⌘ + U
