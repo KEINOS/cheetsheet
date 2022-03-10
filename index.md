@@ -23,7 +23,10 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
 
 * [GPG(OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpgopenpgpgnupg)
+  * [References](./cheetsheets/gpg.md#references)
   * [Create GPG Key Pair](./cheetsheets/gpg.md#create-gpg-key-pair)
+  * [Sign a file with GPG key](./cheetsheets/gpg.md#sign-a-file-with-gpg-key)
+  * [Verify the signed file](./cheetsheets/gpg.md#verify-the-signed-file)
   * [Show GPG Key Info](./cheetsheets/gpg.md#show-gpg-key-info)
   * [Show GPG Keys (Public and Private)](./cheetsheets/gpg.md#show-gpg-keys-public-and-private)
 
