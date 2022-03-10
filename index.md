@@ -27,6 +27,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Create GPG Key Pair](./cheetsheets/gpg.md#create-gpg-key-pair)
   * [Sign a file with GPG key](./cheetsheets/gpg.md#sign-a-file-with-gpg-key)
   * [Verify the signed file](./cheetsheets/gpg.md#verify-the-signed-file)
+  * [Assign PGP key to git commit](./cheetsheets/gpg.md#assign-pgp-key-to-git-commit)
   * [Show GPG Key Info](./cheetsheets/gpg.md#show-gpg-key-info)
   * [Show GPG Keys (Public and Private)](./cheetsheets/gpg.md#show-gpg-keys-public-and-private)
 

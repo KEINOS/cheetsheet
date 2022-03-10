@@ -43,6 +43,10 @@ gpg --verify <file>.gpg
 gpg --verify --default-key <email@address> <file>.gpg
 ```
 
+## Assign PGP key to `git` commit
+
+- [Git へ署名キーを伝える](https://docs.github.com/ja/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key) @ docs.github.com
+
 ## Show GPG Key Info
 
 ```bash
