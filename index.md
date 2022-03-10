@@ -22,6 +22,11 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to sleep a second](./cheetsheets/golang.md#how-to-sleep-a-second)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
 
+* [GPG(OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpgopenpgpgnupg)
+  * [Create GPG Key Pair](./cheetsheets/gpg.md#create-gpg-key-pair)
+  * [Show GPG Key Info](./cheetsheets/gpg.md#show-gpg-key-info)
+  * [Show GPG Keys (Public and Private)](./cheetsheets/gpg.md#show-gpg-keys-public-and-private)
+
 * [IPFS](./cheetsheets/ipfs.md#ipfs)
   * [Create IPFS system user with no home](./cheetsheets/ipfs.md#create-ipfs-system-user-with-no-home)
   * [Create IPFS systemd service](./cheetsheets/ipfs.md#create-ipfs-systemd-service)
@@ -57,7 +62,8 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)
-  * [MarkdownLint](./cheetsheets/miscellaneous.md#markdownlint)
+    * [Flavors](./cheetsheets/miscellaneous.md#flavors)
+    * [MarkdownLint](./cheetsheets/miscellaneous.md#markdownlint)
   * [VSCode](./cheetsheets/miscellaneous.md#vscode)
     * [Comment out/in the selected code on macOS](./cheetsheets/miscellaneous.md#comment-outin-the-selected-code-on-macos)
 
