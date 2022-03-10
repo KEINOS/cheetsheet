@@ -9,8 +9,14 @@
 1 つ前のコミットに追加する方法。
 
 ```bash
+git add .
 git commit --amend --no-edit
 git push --force
+```
+
+```bash
+# One-liner
+git add . && git commit --amend --no-edit && git push --force
 ```
 
 ## Create Orphan Branch
