@@ -45,6 +45,13 @@ ssh -i ~/.ssh/id_rsa rancher@192.168.10.123
 sudo poweroff
 ```
 
+## Basic kubectl commands
+
+- `kubectl get` - リソースの一覧を表示
+- `kubectl describe` - 単一リソースに関する詳細情報を表示
+- `kubectl logs` - 単一Pod上の単一コンテナ内のログを表示
+- `kubectl exec` - 単一Pod上の単一コンテナ内でコマンドを実行
+
 ## View nodes
 
 ```bash

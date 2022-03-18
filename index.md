@@ -45,6 +45,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [SSH Access](./cheetsheets/kubernetes.md#ssh-access)
   * [Login via SSH with GitHub account](./cheetsheets/kubernetes.md#login-via-ssh-with-github-account)
   * [Shutdown](./cheetsheets/kubernetes.md#shutdown)
+  * [Basic kubectl commands](./cheetsheets/kubernetes.md#basic-kubectl-commands)
   * [View nodes](./cheetsheets/kubernetes.md#view-nodes)
   * [Path of the key (Node Token) to share with other nodes](./cheetsheets/kubernetes.md#path-of-the-key-node-token-to-share-with-other-nodes)
   * [Set up worker node](./cheetsheets/kubernetes.md#set-up-worker-node)
