@@ -21,7 +21,7 @@ ssh_authorized_keys:
 ```
 
 - Ref:
-  - https://github.com/rancher/k3os#configuration-reference
+  - [https://github.com/rancher/k3os#configuration-reference](https://github.com/rancher/k3os#configuration-reference)
 
 ## Login via SSH with GitHub account
 
@@ -56,6 +56,40 @@ sudo poweroff
 
 ```bash
 kubectl get nodes
+```
+
+## View pod information
+
+- To print existing Pods.
+
+  ```bash
+  kubectl get pods
+  ```
+
+- To view what containers are inside that Pod and what images are used to build those containers.
+
+  ```bash
+  kubectl describe pods
+  ```
+
+### Get Pod name and Pod log
+
+```bash
+kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}'
+```
+
+```shellsession
+$ export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+$ echo Name of the Pod: $POD_NAME
+...
+$ kubectl logs $POD_NAME
+...
+```
+
+### Get inside the Pod
+
+```bash
+kubectl exec -it $POD_NAME -- /bin/bash
 ```
 
 ## Path of the key (Node Token) to share with other nodes

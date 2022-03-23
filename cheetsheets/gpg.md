@@ -2,7 +2,7 @@
 
 ---
 
-# GPG(OpenPGP/GnuPG)
+# GPG (OpenPGP/GnuPG)
 
 `gpg`(GnuPG) command is an implementation of the OpenPGP standard.
 
@@ -13,7 +13,7 @@
 - [Signing](https://github.com/goreleaser/goreleaser-action#signing) | goreleaser-action @ GitHub
 - [Signing checksums and artifacts](https://goreleaser.com/customization/sign/) @ goreleaser.com
 
-## Create GPG Key Pair
+## How to create GPG key pair
 
 ```bash
 gpg --full-generate-key --expert
@@ -23,7 +23,7 @@ gpg --full-generate-key --expert
   - Key Type: `ECC` both sign and encrypt<br>鍵の種類: `ECC` 署名と暗号化
   - Elliptic Curve: `Curve 25519`<br>楕円曲線: `Curve 25519`
 
-## Sign a file with GPG key
+## How to sign a file with GPG key
 
 ```bash
 gpg --sign <file>
@@ -33,7 +33,7 @@ gpg --sign <file>
 gpg --sign --default-key <email@address> <file>
 ```
 
-## Verify the signed file
+## How to verify the signed file
 
 ```bash
 gpg --verify <file>.gpg
@@ -47,7 +47,7 @@ gpg --verify --default-key <email@address> <file>.gpg
 
 - [Git へ署名キーを伝える](https://docs.github.com/ja/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key) @ docs.github.com
 
-## Show GPG Key Info
+## How to get GPG key information
 
 ```bash
 gpg --list-keys --keyid-format short
@@ -57,7 +57,17 @@ gpg --list-keys --keyid-format short
 gpg --list-keys --keyid-format long
 ```
 
-## Show GPG Keys (Public and Private)
+## Whow to get the fingerprint of a GPG key
+
+```bash
+gpg --show-keys --fingerprint KEINOS.gpg
+```
+
+```bash
+gpg --show-keys KEINOS.gpg
+```
+
+## How to get current GPG Keys (Public and Private)
 
 - List all key IDs. In the below example "`3AA5C34371567BD2`" is the key ID.
 
