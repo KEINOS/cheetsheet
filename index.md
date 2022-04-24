@@ -65,6 +65,7 @@ This is a memorandum/cheet-sheet for KEINOS.
     * [View service log](./cheetsheets/linux.md#view-service-log)
     * [Reasons to get "Active: inactive (dead)"](./cheetsheets/linux.md#reasons-to-get-active-inactive-dead)
   * [AlpineLinux](./cheetsheets/linux.md#alpinelinux)
+  * [Ubuntu](./cheetsheets/linux.md#ubuntu)
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
   * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)

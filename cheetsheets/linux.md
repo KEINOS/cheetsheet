@@ -73,3 +73,19 @@ This is a list of basic apk packages that must be installed to develop and build
 ```bash
 apk add --no-cache alpine-sdk build-base
 ```
+
+## Ubuntu
+
+Check graphics driver.
+
+```bash
+$ # Check graphics devices
+$ ubuntu-drivers devices
+...
+$ # Install the driver (Depends on driver)
+$ sudo apt install nvidia-driver-510 nvidia-dkms-510
+...
+$ # Check the driver
+$ nvidia-smi
+...
+```
