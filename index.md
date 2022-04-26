@@ -21,6 +21,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to return error response in httptest\.NewServer during test](./cheetsheets/golang.md#how-to-return-error-response-in-httptestnewserver-during-test)
   * [How to sleep a second](./cheetsheets/golang.md#how-to-sleep-a-second)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
+  * [How to benchmark](./cheetsheets/golang.md#how-to-benchmark)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

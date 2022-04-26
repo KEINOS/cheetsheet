@@ -234,3 +234,32 @@ brews:
     test: |
       system "#{bin}/multihash -h"
 ```
+
+## How to benchmark
+
+```go
+func BenchmarkAppend_AllocateEveryTime(b *testing.B) {
+    base := []string{}
+
+    b.ResetTimer()
+    // b.N is the number of iterations given from the benchmarking tool.
+    for i := 0; i < b.N; i++ {
+        base = append(base, fmt.Sprintf("no%d", i))
+    }
+}
+```
+
+```shellsession
+$ go test -bench . -benchmem
+...
+```
+
+```bash
+# Options
+-benchmem ............ Print memory allocations
+-benchtime t ......... Iterate for t seconds. Default 1s.
+-cpuprofile=*.prof ... Detaild CPU profiling information. Viewable with `go tool pprof`.
+-count ............... Number of test iterations to run.
+-cpu ................. Number of CPUs to use.
+-memprofile=*.mem .... Detailed memory profiling information. Viewable with `go tool pprof`.
+```
