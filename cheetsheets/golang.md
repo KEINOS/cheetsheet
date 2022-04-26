@@ -45,7 +45,7 @@ func main() {
 }
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## Get imported module's version from the code
 
@@ -85,7 +85,7 @@ for _, modDep := range mods {
 return modsFound
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## How to get content like `cURL`
 
@@ -115,7 +115,7 @@ if response.StatusCode != http.StatusOK {
 fmt.Println(string(resBody))
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## How to return error response in httptest.NewServer during test
 
@@ -129,7 +129,7 @@ dummySrv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, req 
 defer dummySrv.Close()
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## How to sleep a second
 
@@ -243,7 +243,7 @@ brews:
       system "#{bin}/multihash -h"
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## How to benchmark
 
@@ -274,7 +274,7 @@ $ go test -bench . -benchmem
 -memprofile=*.mem .... Detailed memory profiling information. Viewable with `go tool pprof`.
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## How to generate 1MBytes of consistent data for testing
 
@@ -304,4 +304,4 @@ func testData(b *testing.B) []byte {
 }
 ```
 
-[[Back to top](#header)]<!-- ---------------------------------------------- -->
+[[Back to top](#)]<!-- ---------------------------------------------- -->

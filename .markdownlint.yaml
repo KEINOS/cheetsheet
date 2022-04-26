@@ -13,3 +13,6 @@ MD013: false
 
 # MD010/no-hard-tabs - Hard tabs
 MD010: false
+
+# MD042/No empty links - For "back to top" links
+MD042: false
