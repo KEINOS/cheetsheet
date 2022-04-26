@@ -22,6 +22,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to sleep a second](./cheetsheets/golang.md#how-to-sleep-a-second)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
   * [How to benchmark](./cheetsheets/golang.md#how-to-benchmark)
+  * [How to generate 1MBytes of consistent data for testing](./cheetsheets/golang.md#how-to-generate-1mbytes-of-consistent-data-for-testing)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

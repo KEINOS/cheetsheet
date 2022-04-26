@@ -45,6 +45,8 @@ func main() {
 }
 ```
 
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
+
 ## Get imported module's version from the code
 
 ```go
@@ -83,6 +85,8 @@ for _, modDep := range mods {
 return modsFound
 ```
 
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
+
 ## How to get content like `cURL`
 
 ```go
@@ -111,6 +115,8 @@ if response.StatusCode != http.StatusOK {
 fmt.Println(string(resBody))
 ```
 
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
+
 ## How to return error response in httptest.NewServer during test
 
 ```go
@@ -122,6 +128,8 @@ dummySrv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, req 
 }))
 defer dummySrv.Close()
 ```
+
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
 
 ## How to sleep a second
 
@@ -235,6 +243,8 @@ brews:
       system "#{bin}/multihash -h"
 ```
 
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
+
 ## How to benchmark
 
 ```go
@@ -263,3 +273,35 @@ $ go test -bench . -benchmem
 -cpu ................. Number of CPUs to use.
 -memprofile=*.mem .... Detailed memory profiling information. Viewable with `go tool pprof`.
 ```
+
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
+
+## How to generate 1MBytes of consistent data for testing
+
+```go
+// inputData holds 1MB(1e6) size of data created by testData() function.
+var inputData []byte
+
+// The testData creates 1,000,000 bytes= 1MB (1e6) size of data.
+// The returned values are consistent and not random.
+func testData(b *testing.B) []byte {
+	b.Helper()
+
+  // use initialized data
+	if len(inputData) != 0 {
+    return inputData
+  }
+
+	// Initialize data
+  inputData = make([]byte, 1e6)
+
+  for i := range inputData {
+    // Custom this line to generate different data
+    inputData[i] = byte(i % 251)
+  }
+
+	return inputData
+}
+```
+
+[[Back to top](#header)]<!-- ---------------------------------------------- -->
