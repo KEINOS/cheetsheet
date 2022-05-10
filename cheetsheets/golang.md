@@ -305,3 +305,27 @@ func testData(b *testing.B) []byte {
 ```
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to check if file exists
+
+```go
+func fileExists(path string) bool {
+    _, err := os.Stat(path)
+
+    return !errors.Is(err, os.ErrNotExist)
+}
+```
+
+If you want to check if a file exists before opening it, you don't need
+to check the path before opening it.
+
+The below opens a file if it exists, otherwise it creates a new one.
+
+```go
+f, err := os.OpenFile(pathFile, os.O_RDWR|os.O_CREATE|os.O_EXCL, 0666)
+if errors.Is(err, os.ErrNotExist) {
+  ...
+}
+```
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
