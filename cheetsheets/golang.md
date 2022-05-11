@@ -309,10 +309,14 @@ func testData(b *testing.B) []byte {
 ## How to check if file exists
 
 ```go
+import (
+  "os"
+  "io/fs"
+)
 func fileExists(path string) bool {
     _, err := os.Stat(path)
 
-    return !errors.Is(err, os.ErrNotExist)
+    return !errors.Is(err, fs.ErrNotExist)
 }
 ```
 
