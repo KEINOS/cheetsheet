@@ -24,6 +24,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to benchmark](./cheetsheets/golang.md#how-to-benchmark)
   * [How to generate 1MBytes of consistent data for testing](./cheetsheets/golang.md#how-to-generate-1mbytes-of-consistent-data-for-testing)
   * [How to check if file exists](./cheetsheets/golang.md#how-to-check-if-file-exists)
+  * [How to deal with io\.Reader](./cheetsheets/golang.md#how-to-deal-with-ioreader)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

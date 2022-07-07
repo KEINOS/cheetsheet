@@ -333,3 +333,59 @@ if errors.Is(err, os.ErrNotExist) {
 ```
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to deal with io.Reader
+
+```go
+package main
+
+import (
+	"errors"
+	"fmt"
+	"io"
+	"strings"
+)
+
+func doSomething(rd io.Reader) error {
+	if rd == nil {
+		return errors.New("nil pointer for input given")
+	}
+
+	const bufferSize = 256 // Chunk size to read from rd
+	var content []byte     // Read data to store
+
+	// Create buffer to read
+	buffer := make([]byte, bufferSize)
+
+	for {
+		n, err := rd.Read(buffer)
+		if 0 < n {
+			// Read
+			content = append(content, buffer...)
+		}
+		if err == io.EOF {
+			break // End of file
+		}
+		if err != nil {
+			return err // error
+		}
+	}
+
+	fmt.Println(string(content))
+
+	return nil
+}
+
+func main() {
+	// String
+	input := "some string"
+
+	r := strings.NewReader(input)
+
+	doSomething(r)
+}
+```
+
+- [Go Playground](https://go.dev/play/p/6dbW3ygGr7q)
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
