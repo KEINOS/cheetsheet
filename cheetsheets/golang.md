@@ -389,3 +389,31 @@ func main() {
 - [Go Playground](https://go.dev/play/p/6dbW3ygGr7q)
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to deal with io.Writer
+
+```go
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"io"
+)
+
+func writeSomething(w io.Writer) (n int, err error) {
+	return w.Write([]byte("foo bar"))
+}
+
+func main() {
+	var b bytes.Buffer
+
+	writeSomething(&b)
+
+	fmt.Println(b.String())
+}
+```
+
+- [Go Playground](https://go.dev/play/p/8dnTL0Cfjrx)
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
