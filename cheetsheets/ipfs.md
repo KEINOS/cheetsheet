@@ -43,3 +43,10 @@ ipfs pin ls
 ## How to set swarm-key for JS-IPFS
 
 - https://discuss.ipfs.io/t/js-ipfs-swarm-key-for-private-network/3849/11
+
+## How to find/show the current peer ID of the node
+
+```bash
+# Show IPFS node id information
+ipfs id
+```
