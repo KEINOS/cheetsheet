@@ -9,6 +9,8 @@
 #      go install "github.com/ekalinin/github-markdown-toc.go/cmd/gh-md-toc@latest"
 #      brew install github-markdown-toc
 
+set -eu
+
 # 定数
 NAME_FILE_INDEX="index.md"
 NAME_DIR_DOCS="cheetsheets"
