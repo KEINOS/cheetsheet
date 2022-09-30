@@ -6,6 +6,23 @@
 
 This is a memorandum for KEINOS.
 
+## How to convert `bytes` to `int` (`[]byte --> int`)
+
+```go
+import "math/big"
+
+b := []byte{0xFF, 0xFF, 0xFF} // 0d16777215 = 0xffffff
+fmt.Printf("%X\n", b)
+
+e := int(big.NewInt(0).SetBytes(b).Uint64())
+fmt.Printf("%v\n", e)
+// Output:
+// FFFFFF
+// 16777215
+```
+
+- [View it online](https://go.dev/play/p/UqsfcM1UTnH) @ Go Playground
+
 ## Random Numbers
 
 ```go
