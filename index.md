@@ -15,6 +15,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Rename branch from "master" to "main"](./cheetsheets/git.md#rename-branch-from-master-to-main)
 
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
+  * [Generate rowID and tableID for Key\-Value SQLite3](./cheetsheets/golang.md#generate-rowid-and-tableid-for-key-value-sqlite3)
   * [How to convert bytes to int ([]byte \-\-&gt; int)](./cheetsheets/golang.md#how-to-convert-bytes-to-int-byte----int)
   * [Random Numbers](./cheetsheets/golang.md#random-numbers)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)

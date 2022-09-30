@@ -6,6 +6,64 @@
 
 This is a memorandum for KEINOS.
 
+## Generate rowID and tableID for Key-Value SQLite3
+
+Example of creating the keys (`rowid` and table name) from the contens to use SQLite3 as a CAS (Content Addressable Storage).
+
+```go
+package main
+
+import (
+	"fmt"
+	"math/big"
+
+	"github.com/zeebo/blake3"
+)
+
+func Example() {
+	for _, sample := range []string{
+		"Hello World",
+		"Hello World!",
+		"Hello, world",
+	} {
+		rowID, tableID := GetIDs(sample)
+
+		fmt.Println("RowID:", rowID)
+		fmt.Println("TableID:", tableID)
+	}
+	// RowID: 4753612358325858618
+	// TableID: table039
+	// RowID: 6676447199849907433
+	// TableID: table179
+	// RowID: -124719410497300881
+	// TableID: table218
+}
+
+// GetIDs returns a unique rowID and tableID from the given data.
+//
+// "rowID" is the first 8 bytes of BLAKE3-256 hash as unsigned decimal string.
+// "tableID" is the 1 byte XOR checksum of the full hash as decimal string with
+// "table" prefix.
+func GetIDs(data string) (rowID, tableID string) {
+	digest := blake3.Sum256([]byte(data))
+
+	chksum := byte(0)
+	for _, b := range digest {
+		chksum ^= b
+	}
+
+	tableID = fmt.Sprintf("table%03d", chksum)
+
+	trimmed := digest[:8]
+	hashedInt := big.NewInt(0).SetBytes(trimmed).Int64()
+	rowID = fmt.Sprintf("%d", hashedInt)
+
+	return rowID, tableID
+}
+```
+
+- [View it online](https://go.dev/play/p/LSdsJB9U6fn) @ Go playground
+
 ## How to convert `bytes` to `int` (`[]byte --> int`)
 
 ```go
