@@ -15,6 +15,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Rename branch from "master" to "main"](./cheetsheets/git.md#rename-branch-from-master-to-main)
 
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
+  * [Random Numbers](./cheetsheets/golang.md#random-numbers)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
   * [Get imported module's version from the code](./cheetsheets/golang.md#get-imported-modules-version-from-the-code)
   * [How to get content like cURL](./cheetsheets/golang.md#how-to-get-content-like-curl)

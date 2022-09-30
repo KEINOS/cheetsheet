@@ -6,6 +6,36 @@
 
 This is a memorandum for KEINOS.
 
+## Random Numbers
+
+```go
+// Not cryptographically secure but fast.
+import "math/rand"
+
+rand.Seed(time.Now().UnixNano())
+
+// Ger random number between 0 and 99.
+num := int(100)
+
+//nolint:gosec // not for cryptographical use
+fmt.Println(rand.Intn(num))
+```
+
+```go
+// Cryptographically secure random number but slower than math/rand.
+import "crypto/rand"
+
+// Ger random number between 0 and 99.
+num := int64(100)
+
+n, err := rand.Int(rand.Reader, big.NewInt(num))
+if err != nil {
+    panic(err)
+}
+
+fmt.Println(n)
+```
+
 ## Enum (Enumerable)
 
 - Ref: [https://www.sohamkamani.com/golang/enums/](https://www.sohamkamani.com/golang/enums/)
