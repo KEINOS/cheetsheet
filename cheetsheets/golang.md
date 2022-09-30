@@ -39,11 +39,11 @@ func Example() {
 	// TableID: table218
 }
 
-// GetIDs returns a unique rowID and tableID from the given data.
+// GetIDs returns a unique rowID and tableID combination from the given data.
 //
-// "rowID" is the first 8 bytes of BLAKE3-256 hash as unsigned decimal string.
+// "rowID" is the first 8 bytes of BLAKE3-256 hash as signed decimal string.
 // "tableID" is the 1 byte XOR checksum of the full hash as decimal string with
-// "table" prefix.
+// "table" prefix (`table<xor sum>`).
 func GetIDs(data string) (rowID, tableID string) {
 	digest := blake3.Sum256([]byte(data))
 
@@ -62,7 +62,7 @@ func GetIDs(data string) (rowID, tableID string) {
 }
 ```
 
-- [View it online](https://go.dev/play/p/LSdsJB9U6fn) @ Go playground
+- [View it online](https://go.dev/play/p/jasq10eVQd_f) @ Go playground
 
 ## How to convert `bytes` to `int` (`[]byte --> int`)
 
