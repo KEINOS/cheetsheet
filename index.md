@@ -27,9 +27,11 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to benchmark](./cheetsheets/golang.md#how-to-benchmark)
   * [How to generate 1MBytes of consistent data for testing](./cheetsheets/golang.md#how-to-generate-1mbytes-of-consistent-data-for-testing)
   * [How to check if file exists](./cheetsheets/golang.md#how-to-check-if-file-exists)
-  * [How to deal with io\.Reader](./cheetsheets/golang.md#how-to-deal-with-ioreader)
-  * [How to deal with io\.Writer](./cheetsheets/golang.md#how-to-deal-with-iowriter)
+  * [How to deal with/mimic io\.Reader](./cheetsheets/golang.md#how-to-deal-withmimic-ioreader)
+  * [How to deal with/mimic io\.Writer](./cheetsheets/golang.md#how-to-deal-withmimic-iowriter)
   * [How to sleep n seconds](./cheetsheets/golang.md#how-to-sleep-n-seconds)
+  * [How to deal with/mock/mimic os\.Stdin](./cheetsheets/golang.md#how-to-deal-withmockmimic-osstdin)
+  * [How to trim/remove comments](./cheetsheets/golang.md#how-to-trimremove-comments)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

@@ -439,7 +439,7 @@ if errors.Is(err, os.ErrNotExist) {
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
 
-## How to deal with io.Reader
+## How to deal with/mimic io.Reader
 
 ```go
 package main
@@ -495,7 +495,7 @@ func main() {
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
 
-## How to deal with io.Writer
+## How to deal with/mimic io.Writer
 
 ```go
 package main
@@ -543,3 +543,111 @@ func randSleep(secMax int) {
 ```
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to deal with/mock/mimic os.Stdin
+
+```go
+// mockStdin is a helper function that lets the test pretend dummyInput as os.Stdin.
+// It will return a function to `defer` clean up after the test.
+//
+// Note: This function is not thread-safe. It should not use in parallel tests.
+func mockStdin(t *testing.T, dummyInput string) (funcDefer func(), err error) {
+	t.Helper()
+
+	oldOsStdin := os.Stdin
+
+	tmpfile, err := os.CreateTemp(t.TempDir(), t.Name())
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to create temp file during mocking os.Stdin")
+	}
+
+	content := []byte(dummyInput)
+
+	if _, err := tmpfile.Write(content); err != nil {
+		return nil, errors.Wrap(err, "failed to write to temp file during mocking os.Stdin")
+	}
+
+	if _, err := tmpfile.Seek(0, 0); err != nil {
+		return nil, errors.Wrap(err, "failed to seek the temp file during mocking os.Stdin")
+	}
+
+	// Set stdin to the temp file
+	os.Stdin = tmpfile
+
+	return func() {
+		// clean up
+		os.Stdin = oldOsStdin
+		os.Remove(tmpfile.Name())
+	}, nil
+}
+```
+
+- gist: [[Golang] How to mock/mimic os.Stdin during the test in Go](https://gist.github.com/KEINOS/76857bc6339515d7144e00f17adb1090) @ gitst
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to trim/remove comments
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+	"testing"
+	"unicode"
+)
+
+func StripComment(delimiter, source string) string {
+	if strings.Contains(source, "\n") {
+		result := []string{}
+
+		lines := strings.Split(source, "\n")
+		for _, line := range lines {
+			if strings.TrimSpace(line) == "" {
+				result = append(result, "")
+			}
+			stripped := StripComment(delimiter, line)
+			if strings.TrimSpace(stripped) != "" {
+				result = append(result, stripped)
+			}
+		}
+
+		return strings.Join(result, "\n")
+	}
+
+	if cut := strings.IndexAny(source, delimiter); cut >= 0 {
+		return strings.TrimRightFunc(source[:cut], unicode.IsSpace)
+	}
+
+	return source
+}
+
+func TestStripComment(t *testing.T) {
+	for i, test := range []struct {
+		input  string
+		expect string
+	}{
+		{input: "# foo bar", expect: ""},
+		{input: "foo # bar", expect: "foo"},
+		{input: "foo bar # buzz", expect: "foo bar"},
+		{input: "foo\n#bar\n#buz\nhoge", expect: "foo\nhoge"},
+		{input: "foo\n#bar\n#buz\n\nhoge", expect: "foo\n\nhoge"},
+		{input: "foo\n#bar\n#buz\n   \nhoge", expect: "foo\n\nhoge"},
+		{input: "foo\n#bar\n#buz\n   hoge\nfuga", expect: "foo\n   hoge\nfuga"},
+		{input: "foo\nbar #buz\n   hoge #fuga\npiyo", expect: "foo\nbar\n   hoge\npiyo"},
+	} {
+		expect := test.expect
+		actual := StripComment("#", test.input)
+
+		if expect != actual {
+			fmt.Printf("test #%d failed. got: %s, want: %s\n", i+1, actual, expect)
+			t.Fail()
+		}
+	}
+}
+```
+
+- Virew on [Go Playground](https://go.dev/play/p/8h64FgqWw8v)
+- References
+  - [Strip_comments_from_a_string#Go](https://rosettacode.org/wiki/Strip_comments_from_a_string#Go) @ rosettacode.org
