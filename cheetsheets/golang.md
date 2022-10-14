@@ -649,5 +649,45 @@ func TestStripComment(t *testing.T) {
 ```
 
 - Virew on [Go Playground](https://go.dev/play/p/8h64FgqWw8v)
-- References
+- References:
   - [Strip_comments_from_a_string#Go](https://rosettacode.org/wiki/Strip_comments_from_a_string#Go) @ rosettacode.org
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to shuffle a slice
+
+```go
+// https://golang.org/pkg/math/rand/
+
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	cards := []string{"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"}
+	cards4 := []string{}
+
+	// Prepare 4 stacks of cards
+	for i := 0; i < 4; i++ {
+		cards4 = append(cards4, cards...)
+	}
+
+	rand.Seed(time.Now().UnixNano())
+	rand.Shuffle(len(cards4), func(i, j int) { cards4[i], cards4[j] = cards4[j], cards4[i] })
+
+	fmt.Println(cards4)
+	// [7 3 10 7 10 9 A 8 K 9 J 10 10 A K Q K 5 K Q 6 J 3 8 2 6 2 7 Q J 8 3 J 6 2 8 4 9 A 9 2 4 4 3 5 A 4 6 5 Q 7 5]
+	// [5 2 K K K 10 4 J 9 8 A 3 3 5 4 Q 9 3 4 J 7 6 5 Q 10 J A A 2 7 9 6 7 8 8 7 9 K Q 2 J 5 10 2 4 Q 8 A 6 6 10 3]
+}
+```
+
+- References:
+  - [proposal: math/rand: add Shuffle #20480](https://github.com/golang/go/issues/20480) @ GitHub
+  - [math/rand: add Shuffle](https://go-review.googlesource.com/c/go/+/51891) | go-review @ googlesource.com
+  - [Go 言語でスライス/配列をランダムな順番でシャッフルっする #3026](https://github.com/YumaInaura/YumaInaura/issues/3026) | YumaInaura @ GitHub
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
