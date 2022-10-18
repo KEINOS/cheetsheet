@@ -239,8 +239,31 @@ defer dummySrv.Close()
 ## How to sleep a second
 
 ```go
-time.Sleep(1 * time.Second)
+time.Sleep(time.Second)
 ```
+
+## How to sleep n seconds
+
+```go
+import "time"
+
+sleepTime := time.Duration(5)
+time.Sleep(time.time.Second * time.Duration(sec))
+```
+
+```go
+func randSleep(secMax int) {
+	if secMax == 0 {
+		secMax = 1
+	}
+	// In case of secMax = 1, we get a random number between 0 and 999
+	sec := randInt(secMax * 1000)
+
+	time.Sleep(time.Millisecond * time.Duration(sec))
+}
+```
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## Field Names/Variables of GoReleaser
 
@@ -520,29 +543,6 @@ func main() {
 ```
 
 - [Go Playground](https://go.dev/play/p/8dnTL0Cfjrx)
-
-## How to sleep n seconds
-
-```go
-import "time"
-
-sleepTime := time.Duration(5)
-time.Sleep(time.time.Second * time.Duration(sec))
-```
-
-```go
-func randSleep(secMax int) {
-	if secMax == 0 {
-		secMax = 1
-	}
-	// In case of secMax = 1, we get a random number between 0 and 999
-	sec := randInt(secMax * 1000)
-
-	time.Sleep(time.Millisecond * time.Duration(sec))
-}
-```
-
-[[Back to top](#)]<!-- ---------------------------------------------- -->
 
 ## How to deal with/mock/mimic os.Stdin
 
