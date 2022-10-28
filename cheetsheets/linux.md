@@ -89,3 +89,23 @@ $ # Check the driver
 $ nvidia-smi
 ...
 ```
+
+### How to install Japanese language pack on Ubuntu/Debian
+
+- Error messages:
+
+    ```bash
+    warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+    ```
+
+    ```bash
+    perl: warning: Setting locale failed.
+    perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = "ja_JP.UTF-8",
+        LANG = "en_US.UTF-8"
+        are supported and installed on your system.
+    perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+    ```
+
+- Solution: `sudo apt-get install language-pack-ja`
