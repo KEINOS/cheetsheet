@@ -108,4 +108,12 @@ $ nvidia-smi
     perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
     ```
 
-- Solution: `sudo apt-get install language-pack-ja`
+- Solution:
+  - Ubuntu: `apt-get install language-pack-ja`
+  - Debian:
+
+    ```bash
+    apt-get install locales
+    sed -i -E 's/# (ja_JP.UTF-8)/\1/' /etc/locale.gen
+    locale-gen
+    ```
