@@ -78,6 +78,8 @@ This is a memorandum/cheet-sheet for KEINOS.
     * [View service log](./cheetsheets/linux.md#view-service-log)
     * [Reasons to get "Active: inactive (dead)"](./cheetsheets/linux.md#reasons-to-get-active-inactive-dead)
   * [AlpineLinux](./cheetsheets/linux.md#alpinelinux)
+    * [Must dependencies for building Go binary](./cheetsheets/linux.md#must-dependencies-for-building-go-binary)
+    * [How to create user (docker)](./cheetsheets/linux.md#how-to-create-user-docker)
   * [Ubuntu](./cheetsheets/linux.md#ubuntu)
     * [How to install Japanese language pack on Ubuntu/Debian](./cheetsheets/linux.md#how-to-install-japanese-language-pack-on-ubuntudebian)
 
