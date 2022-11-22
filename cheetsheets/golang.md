@@ -375,6 +375,8 @@ brews:
 
 ## How to install benchstat
 
+- [golang.org/x/perf/cmd/benchstat](https://pkg.go.dev/golang.org/x/perf/cmd/benchstat)
+
 ```go
 go install "golang.org/x/perf/cmd/benchstat@latest"
 ```
