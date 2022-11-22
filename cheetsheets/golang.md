@@ -373,6 +373,14 @@ brews:
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
 
+## How to install benchstat
+
+```go
+go install "golang.org/x/perf/cmd/benchstat@latest"
+```
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
+
 ## How to benchmark
 
 ```go
@@ -388,8 +396,9 @@ func BenchmarkAppend_AllocateEveryTime(b *testing.B) {
 ```
 
 ```shellsession
-$ go test -bench . -benchmem
+$ go test -bench . -benchmem > bench.txt
 ...
+$ benchstat ./bench.txt
 ```
 
 ```bash

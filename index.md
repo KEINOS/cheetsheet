@@ -25,6 +25,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to sleep a second](./cheetsheets/golang.md#how-to-sleep-a-second)
   * [How to sleep n seconds](./cheetsheets/golang.md#how-to-sleep-n-seconds)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
+  * [How to install benchstat](./cheetsheets/golang.md#how-to-install-benchstat)
   * [How to benchmark](./cheetsheets/golang.md#how-to-benchmark)
   * [How to generate 1MBytes of consistent data for testing](./cheetsheets/golang.md#how-to-generate-1mbytes-of-consistent-data-for-testing)
   * [How to check if file exists](./cheetsheets/golang.md#how-to-check-if-file-exists)
