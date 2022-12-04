@@ -445,6 +445,36 @@ func testData(b *testing.B) []byte {
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
 
+## How to write gigantic data to a file
+
+For huge amount of data, instead of using directly `os.File.Write()` method, use `bufio.Writer` in-between to write data in chunks to speed up the process.
+
+```go
+	fileP, err := os.Create(pathFile)
+	if err != nil {
+		return errors.Wrap(err, "failed to open/create file")
+	}
+
+	defer fileP.Close()
+
+	bufP := bufio.NewWriter(fileP)
+	defer bufP.Flush()
+
+	totalSize := int64(0)
+	countLine := 0
+
+	for {
+		countLine++
+
+		written, err := bufP.WriteString(fmt.Sprintf("line: %d\n", countLine))
+		if err != nil {
+			return errors.Wrap(err, "failed to write line")
+		}
+
+		totalSize += int64(written)
+	}
+```
+
 ## How to check if file exists
 
 ```go

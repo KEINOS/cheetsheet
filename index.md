@@ -28,6 +28,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to install benchstat](./cheetsheets/golang.md#how-to-install-benchstat)
   * [How to benchmark](./cheetsheets/golang.md#how-to-benchmark)
   * [How to generate 1MBytes of consistent data for testing](./cheetsheets/golang.md#how-to-generate-1mbytes-of-consistent-data-for-testing)
+  * [How to write gigantic data to a file](./cheetsheets/golang.md#how-to-write-gigantic-data-to-a-file)
   * [How to check if file exists](./cheetsheets/golang.md#how-to-check-if-file-exists)
   * [How to deal with/mimic io\.Reader](./cheetsheets/golang.md#how-to-deal-withmimic-ioreader)
   * [How to deal with/mimic io\.Writer](./cheetsheets/golang.md#how-to-deal-withmimic-iowriter)
