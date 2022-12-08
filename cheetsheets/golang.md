@@ -236,6 +236,15 @@ defer dummySrv.Close()
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
 
+## How to update all the packages(`go.mod` and `go.sum` to the latest)
+
+```bash
+go get -u ./...
+go mod tidy
+```
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
+
 ## How to sleep a second
 
 ```go

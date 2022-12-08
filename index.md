@@ -22,6 +22,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Get imported module's version from the code](./cheetsheets/golang.md#get-imported-modules-version-from-the-code)
   * [How to get content like cURL](./cheetsheets/golang.md#how-to-get-content-like-curl)
   * [How to return error response in httptest\.NewServer during test](./cheetsheets/golang.md#how-to-return-error-response-in-httptestnewserver-during-test)
+  * [How to update all the packages(go\.mod and go\.sum to the latest)](./cheetsheets/golang.md#how-to-update-all-the-packagesgomod-and-gosum-to-the-latest)
   * [How to sleep a second](./cheetsheets/golang.md#how-to-sleep-a-second)
   * [How to sleep n seconds](./cheetsheets/golang.md#how-to-sleep-n-seconds)
   * [Field Names/Variables of GoReleaser](./cheetsheets/golang.md#field-namesvariables-of-goreleaser)
