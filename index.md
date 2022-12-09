@@ -36,6 +36,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to deal with/mock/mimic os\.Stdin](./cheetsheets/golang.md#how-to-deal-withmockmimic-osstdin)
   * [How to trim/remove comments](./cheetsheets/golang.md#how-to-trimremove-comments)
   * [How to shuffle a slice](./cheetsheets/golang.md#how-to-shuffle-a-slice)
+  * [How to remove a repeated spaces in a string](./cheetsheets/golang.md#how-to-remove-a-repeated-spaces-in-a-string)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

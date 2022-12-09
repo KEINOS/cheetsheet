@@ -741,3 +741,16 @@ func main() {
   - [Go 言語でスライス/配列をランダムな順番でシャッフルっする #3026](https://github.com/YumaInaura/YumaInaura/issues/3026) | YumaInaura @ GitHub
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to remove a repeated spaces in a string
+
+```go
+func TrimWordGaps(s string) string {
+	return strings.Join(strings.Fields(s), " ")
+}
+```
+
+- [文字間の複数ホワイトスペースを削除して1つのスペースに置き換える関数](https://qiita.com/KEINOS/items/8b64a3f1b06ddc2d0399) @ Qiita
+- [How to remove redundant spaces/whitespace from a string in Golang?](https://stackoverflow.com/a/42251527/18152508) @ StackOverflow
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
