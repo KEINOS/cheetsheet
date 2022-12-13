@@ -37,6 +37,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to trim/remove comments](./cheetsheets/golang.md#how-to-trimremove-comments)
   * [How to shuffle a slice](./cheetsheets/golang.md#how-to-shuffle-a-slice)
   * [How to remove a repeated spaces in a string](./cheetsheets/golang.md#how-to-remove-a-repeated-spaces-in-a-string)
+  * [How to get an element randomly from a slice](./cheetsheets/golang.md#how-to-get-an-element-randomly-from-a-slice)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

@@ -754,3 +754,18 @@ func TrimWordGaps(s string) string {
 - [How to remove redundant spaces/whitespace from a string in Golang?](https://stackoverflow.com/a/42251527/18152508) @ StackOverflow
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to get an element randomly from a slice
+
+```go
+rand.Seed(time.Now().UnixNano())
+choises := []string{
+	"One",
+	"Two",
+	"Three",
+	"Four",
+}
+fmt.Println("Random pick:", choises[rand.Intn(len(choises))])
+```
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
