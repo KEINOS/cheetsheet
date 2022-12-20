@@ -491,11 +491,24 @@ import (
   "os"
   "io/fs"
 )
-func fileExists(path string) bool {
+
+// PathExists returns true if the given path exists. Whether it is a file or a directory.
+func PathExists(path string) bool {
     _, err := os.Stat(path)
 
     return !errors.Is(err, fs.ErrNotExist)
 }
+
+// IsFile returns true if the given path is an existing file.
+func IsFile(pathFile string) bool {
+	info, err := os.Stat(path)
+	if err != nil {
+		return !errors.Is(err, fs.ErrNotExist)
+	}
+
+	return !info.IsDir()
+}
+
 ```
 
 If you want to check if a file exists before opening it, you don't need
