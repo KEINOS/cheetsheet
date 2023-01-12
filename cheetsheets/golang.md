@@ -492,24 +492,26 @@ import (
   "io/fs"
 )
 
-// PathExists returns true if the given path exists. Whether it is a file or a directory.
+// PathExists returns true if the given path exists. Whether it is a file or a
+// directory.
 func PathExists(path string) bool {
-    _, err := os.Stat(path)
+	_, err := os.Stat(path)
 
-    return !errors.Is(err, fs.ErrNotExist)
+	return err == nil
 }
 
 // IsFile returns true if the given path is an existing file.
 func IsFile(pathFile string) bool {
-	info, err := os.Stat(path)
-	if err != nil {
-		return !errors.Is(err, fs.ErrNotExist)
+	info, err := os.Stat(pathFile)
+	if err == nil {
+		return !info.IsDir()
 	}
 
-	return !info.IsDir()
+	return false
 }
-
 ```
+
+- [View it online](https://go.dev/play/p/KGvcc3jvX2t) @ GoPlayground
 
 If you want to check if a file exists before opening it, you don't need
 to check the path before opening it.
