@@ -6,6 +6,14 @@
 
 This is a memorandum for KEINOS.
 
+## Check available disk drive
+
+```bash
+fdisk -h
+```
+
+- In case `lsblk` command is not available by default, such as Alpine Linux.
+
 ## Command Alias
 
 ```bash

@@ -74,6 +74,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Install Rancher on VM](./cheetsheets/kubernetes.md#install-rancher-on-vm)
 
 * [Linux CheetSheet](./cheetsheets/linux.md#linux-cheetsheet)
+  * [Check available disk drive](./cheetsheets/linux.md#check-available-disk-drive)
   * [Command Alias](./cheetsheets/linux.md#command-alias)
   * [How to check users in a Linux system](./cheetsheets/linux.md#how-to-check-users-in-a-linux-system)
   * [How to get the filesystem name of the root directory's partition](./cheetsheets/linux.md#how-to-get-the-filesystem-name-of-the-root-directorys-partition)
