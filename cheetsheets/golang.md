@@ -513,7 +513,7 @@ func PathExists(path string) bool {
 	return err == nil
 }
 
-// IsFile returns true if the given path is an existing file.
+// IsFile returns true if the given file path exists and is not a directory.
 func IsFile(pathFile string) bool {
 	info, err := os.Stat(pathFile)
 	if err == nil {
@@ -521,6 +521,13 @@ func IsFile(pathFile string) bool {
 	}
 
 	return false
+}
+
+// FileExists returns true if the given file path exists and is not a directory.
+func FileExists(path string) bool {
+	fileInfo, err := os.Stat(path)
+
+	return !errors.Is(err, fs.ErrNotExist) && !fileInfo.IsDir()
 }
 ```
 
