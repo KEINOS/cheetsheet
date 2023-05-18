@@ -804,3 +804,19 @@ fmt.Println("Random pick:", choises[rand.Intn(len(choises))])
 ```
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to build static binary
+
+```bash
+go build \
+      -ldflags="-s -w -extldflags \"-static\"" \
+      -o /go/bin/myapp \
+      ./cmd/myapp/main.go
+# Smoke test
+/go/bin/myapp
+```
+
+- References:
+  - [【Golang】"net" モジュールを使った静的リンクバイナリを Docker + scratch で使う際のビルドの注意【"net/http" "net/url" など】](https://qiita.com/KEINOS/items/739f83cb9ddfed43404b) @ Qiita
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->

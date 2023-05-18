@@ -50,3 +50,12 @@ ipfs pin ls
 # Show IPFS node id information
 ipfs id
 ```
+
+## Run as a service via brew install
+
+```bash
+#To restart ipfs after an upgrade:
+brew services restart ipfs
+#Or, if you don't want/need a background service you can just run:
+/usr/local/opt/ipfs/bin/ipfs daemon
+```

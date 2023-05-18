@@ -39,6 +39,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to shuffle a slice](./cheetsheets/golang.md#how-to-shuffle-a-slice)
   * [How to remove a repeated spaces in a string](./cheetsheets/golang.md#how-to-remove-a-repeated-spaces-in-a-string)
   * [How to get an element randomly from a slice](./cheetsheets/golang.md#how-to-get-an-element-randomly-from-a-slice)
+  * [How to build static binary](./cheetsheets/golang.md#how-to-build-static-binary)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)
@@ -59,6 +60,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to generate swarm\-key for private IPFS network](./cheetsheets/ipfs.md#how-to-generate-swarm-key-for-private-ipfs-network)
   * [How to set swarm\-key for JS\-IPFS](./cheetsheets/ipfs.md#how-to-set-swarm-key-for-js-ipfs)
   * [How to find/show the current peer ID of the node](./cheetsheets/ipfs.md#how-to-findshow-the-current-peer-id-of-the-node)
+  * [Run as a service via brew install](./cheetsheets/ipfs.md#run-as-a-service-via-brew-install)
 
 * [K3OS](./cheetsheets/kubernetes.md#k3os)
   * [Set password](./cheetsheets/kubernetes.md#set-password)
