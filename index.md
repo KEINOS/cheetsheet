@@ -102,6 +102,8 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [VSCode](./cheetsheets/miscellaneous.md#vscode)
     * [Comment out/in the selected code on macOS](./cheetsheets/miscellaneous.md#comment-outin-the-selected-code-on-macos)
 
+* [Proxmox Cheetsheet](./cheetsheets/proxmox.md#proxmox-cheetsheet)
+
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
   * [RaspberryPi Imager](./cheetsheets/raspberrypi.md#raspberrypi-imager)
     * [Advanced Mode](./cheetsheets/raspberrypi.md#advanced-mode)
