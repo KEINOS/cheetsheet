@@ -4,8 +4,9 @@
 
 # Proxmox Cheetsheet
 
+## How to update CT Template (LXC Container templates)
+
 ```sh
-# Update CT(LXC Container) Templates
 pveam update
 ```
 

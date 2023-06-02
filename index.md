@@ -103,6 +103,7 @@ This is a memorandum/cheet-sheet for KEINOS.
     * [Comment out/in the selected code on macOS](./cheetsheets/miscellaneous.md#comment-outin-the-selected-code-on-macos)
 
 * [Proxmox Cheetsheet](./cheetsheets/proxmox.md#proxmox-cheetsheet)
+  * [How to update CT Template (LXC Container templates)](./cheetsheets/proxmox.md#how-to-update-ct-template-lxc-container-templates)
 
 * [RaspberryPi CheetSheet](./cheetsheets/raspberrypi.md#raspberrypi-cheetsheet)
   * [RaspberryPi Imager](./cheetsheets/raspberrypi.md#raspberrypi-imager)
