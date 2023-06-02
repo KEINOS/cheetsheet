@@ -93,6 +93,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Must dependencies for building Go binary](./cheetsheets/linux_alpine.md#must-dependencies-for-building-go-binary)
   * [How to create user (docker)](./cheetsheets/linux_alpine.md#how-to-create-user-docker)
   * [Installing Docker on Alpine Linux](./cheetsheets/linux_alpine.md#installing-docker-on-alpine-linux)
+  * [Launching Portainer via docker compose](./cheetsheets/linux_alpine.md#launching-portainer-via-docker-compose)
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
   * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)

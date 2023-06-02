@@ -44,3 +44,38 @@ docker run hello-world
 ```
 
 - Ref: [https://wiki.alpinelinux.org/wiki/Docker](https://wiki.alpinelinux.org/wiki/Docker)
+
+## Launching Portainer via docker compose
+
+Create self cert for portainer endpoint.
+
+```bash
+# Move to portainer cert directory to mount
+cd /data/portainer/certs
+
+openssl genrsa 2048 > server.key
+openssl req -new -key server.key > server.csr
+openssl x509 -req -days 3650 -signkey server.key < server.csr > server.crt
+```
+
+Create `docker-compose.yml` and mount the data and cert directory.
+
+```yaml
+version: "3"
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - 9443:9443
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /data/portainer:/data
+      - /data/portainer/certs:/certs
+    restart: unless-stopped
+    command:
+      --sslcert /certs/server.crt
+      --sslkey /certs/server.key
+```
