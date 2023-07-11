@@ -34,3 +34,16 @@ $ diskutil list
 ```
 
 - Ref: [Will a clean install create a recovery partition?(https://discussions.apple.com/thread/6613513?answerId=26891623022#26891623022) @ discussions.apple.com
+
+## Homebrew
+
+### Run as a service
+
+```bash
+brew services start <name>
+```
+
+```shellsession
+$ brew services start ipfs
+...
+```

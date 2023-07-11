@@ -15,10 +15,11 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Rename branch from "master" to "main"](./cheetsheets/git.md#rename-branch-from-master-to-main)
 
 * [Golang CheetSheet](./cheetsheets/golang.md#golang-cheetsheet)
-  * [Random Numbers (Non Cryptographically Secure)](./cheetsheets/golang.md#random-numbers-non-cryptographically-secure)
   * [Generate rowID and tableID for Key\-Value SQLite3](./cheetsheets/golang.md#generate-rowid-and-tableid-for-key-value-sqlite3)
   * [How to convert bytes to int ([]byte \-\-&gt; int)](./cheetsheets/golang.md#how-to-convert-bytes-to-int-byte----int)
   * [Random Numbers](./cheetsheets/golang.md#random-numbers)
+    * [Cryptographically Insecure](./cheetsheets/golang.md#cryptographically-insecure)
+    * [Cryptographically Secure](./cheetsheets/golang.md#cryptographically-secure)
   * [Enum (Enumerable)](./cheetsheets/golang.md#enum-enumerable)
   * [Get imported module's version from the code](./cheetsheets/golang.md#get-imported-modules-version-from-the-code)
   * [How to get content like cURL](./cheetsheets/golang.md#how-to-get-content-like-curl)
@@ -97,6 +98,9 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
   * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)
+  * [How to check macOS Recovery Partition](./cheetsheets/macos.md#how-to-check-macos-recovery-partition)
+  * [Homebrew](./cheetsheets/macos.md#homebrew)
+    * [Run as a service](./cheetsheets/macos.md#run-as-a-service)
 
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)

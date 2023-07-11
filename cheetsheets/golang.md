@@ -6,19 +6,6 @@
 
 This is a memorandum for KEINOS.
 
-## Random Numbers (Non Cryptographically Secure)
-
-```diff
-- rand.Seed(time.Now().UnixNano())
-- sec := rand.Intn(secMax * mil)
-+ randGen := rand.New(rand.NewSource(time.Now().UnixNano()))
-+ sec := randGen.Intn(secMax * mil)
-```
-
-This is to avoid the following error:
-
-> Error: SA1019: rand.Seed has been deprecated since Go 1.20 and an alternative has been available since Go 1.0: Programs that call Seed and then expect a specific sequence of results from the global random source (using functions such as Int) can be broken when a dependency changes how much it consumes from the global random source. To avoid such breakages, programs that need a specific result sequence should use NewRand(NewSource(seed)) to obtain a random generator that other packages cannot access. (staticcheck)
-
 ## Generate rowID and tableID for Key-Value SQLite3
 
 Example of creating the keys (`rowid` and table name) from the contens to use SQLite3 as a CAS (Content Addressable Storage).
@@ -96,18 +83,47 @@ fmt.Printf("%v\n", e)
 
 ## Random Numbers
 
-```go
-// Not cryptographically secure but fast.
-import "math/rand"
+### Cryptographically Insecure
 
-rand.Seed(time.Now().UnixNano())
+- Most Simple
 
-// Ger random number between 0 and 99.
-num := int(100)
+	```go
+	// Most simple
+	//nolint:gosec // not for cryptographical use
+	fmt.Println(rand.Int())
+	```
 
-//nolint:gosec // not for cryptographical use
-fmt.Println(rand.Intn(num))
-```
+  - [View it online](https://go.dev/play/p/hL4DyDAz5ON) @ GoPlayground
+
+- New style
+
+	```diff
+	- rand.Seed(time.Now().UnixNano())
+	- sec := rand.Intn(secMax * mil)
+	+ randGen := rand.New(rand.NewSource(time.Now().UnixNano()))
+	+ sec := randGen.Intn(secMax * mil)
+	```
+
+	This is to avoid the following error:
+
+	> Error: SA1019: rand.Seed has been deprecated since Go 1.20 and an alternative has been available since Go 1.0: Programs that call Seed and then expect a specific sequence of results from the global random source (using functions such as Int) can be broken when a dependency changes how much it consumes from the global random source. To avoid such breakages, programs that need a specific result sequence should use NewRand(NewSource(seed)) to obtain a random generator that other packages cannot access. (staticcheck)
+
+- Limiting max number
+
+	```go
+	// Not cryptographically secure but fast.
+	import "math/rand"
+
+	rand.Seed(time.Now().UnixNano())
+
+	// Ger random number between 0 and 99.
+	num := int(100)
+
+	//nolint:gosec // not for cryptographical use
+	fmt.Println(rand.Intn(num))
+	```
+
+### Cryptographically Secure
 
 ```go
 // Cryptographically secure random number but slower than math/rand.
