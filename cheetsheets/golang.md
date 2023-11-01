@@ -836,3 +836,21 @@ go build \
   - [【Golang】"net" モジュールを使った静的リンクバイナリを Docker + scratch で使う際のビルドの注意【"net/http" "net/url" など】](https://qiita.com/KEINOS/items/739f83cb9ddfed43404b) @ Qiita
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## Get maximum int value available
+
+```go
+// Xor the uint zero value to get the max value of uint then bit shift to get
+// the max positive value of int.
+const MaxInt = int(^uint(0) >> 1)
+```
+
+```go
+const MaxUint = ^uint(0)
+const MinUint = 0
+const MaxInt = int(MaxUint >> 1)
+const MinInt = -MaxInt - 1
+```
+
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->

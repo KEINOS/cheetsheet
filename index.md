@@ -41,6 +41,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to remove a repeated spaces in a string](./cheetsheets/golang.md#how-to-remove-a-repeated-spaces-in-a-string)
   * [How to get an element randomly from a slice](./cheetsheets/golang.md#how-to-get-an-element-randomly-from-a-slice)
   * [How to build static binary](./cheetsheets/golang.md#how-to-build-static-binary)
+  * [Get maximum int value available](./cheetsheets/golang.md#get-maximum-int-value-available)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)
