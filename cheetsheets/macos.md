@@ -15,6 +15,11 @@ ProductVersion: 10.15.7
 BuildVersion:   19H1615
 ```
 
+## How to boot from external drive
+
+- Non Apple Keyboards: Press `Alt` key during boot
+- Apple Keyboards: Press `Option` key during boot
+
 ## How to check macOS Recovery Partition
 
 ```shellsession
@@ -34,6 +39,19 @@ $ diskutil list
 ```
 
 - Ref: [Will a clean install create a recovery partition?(https://discussions.apple.com/thread/6613513?answerId=26891623022#26891623022) @ discussions.apple.com
+
+## Disalbe CSR Utils
+
+- `ctl` + `R` during boot
+- Open `Terminal` from `Utilities` menu
+- Run the following command
+
+```shellsession
+$ csrutil disable
+...
+```
+
+- See: https://www.youtube.com/watch?v=4VsrGFCldGk
 
 ## Homebrew
 

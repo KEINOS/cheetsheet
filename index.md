@@ -49,7 +49,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to sign a file with GPG key](./cheetsheets/gpg.md#how-to-sign-a-file-with-gpg-key)
   * [How to verify the signed file](./cheetsheets/gpg.md#how-to-verify-the-signed-file)
   * [Assign PGP key to git commit](./cheetsheets/gpg.md#assign-pgp-key-to-git-commit)
-  * [How to get GPG key information](./cheetsheets/gpg.md#how-to-get-gpg-key-information)
+  * [How to get existing GPG key info](./cheetsheets/gpg.md#how-to-get-existing-gpg-key-info)
   * [Whow to get the fingerprint of a GPG key](./cheetsheets/gpg.md#whow-to-get-the-fingerprint-of-a-gpg-key)
   * [How to get current GPG Keys (Public and Private)](./cheetsheets/gpg.md#how-to-get-current-gpg-keys-public-and-private)
 
@@ -99,7 +99,9 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
   * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)
+  * [How to boot from external drive](./cheetsheets/macos.md#how-to-boot-from-external-drive)
   * [How to check macOS Recovery Partition](./cheetsheets/macos.md#how-to-check-macos-recovery-partition)
+  * [Disalbe CSR Utils](./cheetsheets/macos.md#disalbe-csr-utils)
   * [Homebrew](./cheetsheets/macos.md#homebrew)
     * [Run as a service](./cheetsheets/macos.md#run-as-a-service)
 

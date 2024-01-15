@@ -12,8 +12,14 @@
 - [Signing Git commits with GPG keys that use modern encryption](https://dev.to/benjaminblack/signing-git-commits-with-modern-encryption-1koh) @ dev.to
 - [Signing](https://github.com/goreleaser/goreleaser-action#signing) | goreleaser-action @ GitHub
 - [Signing checksums and artifacts](https://goreleaser.com/customization/sign/) @ goreleaser.com
+- [GnuPG チートシート（簡易版）](https://qiita.com/spiegel-im-spiegel/items/079d69282166281eb946) @ Qiita
 
 ## How to create GPG key pair
+
+```bash
+# gpg --batch --quick-gen-key --passphrase '' <User ID> [algo [usage [expire]]]
+gpg --batch --expert --quick-gen-key --passphrase '' "KEINOS (ECC-Curve25519-Full_Enc-Sign) <github@keinos.com>" default default 0
+```
 
 ```bash
 gpg --full-generate-key --expert
@@ -47,13 +53,15 @@ gpg --verify --default-key <email@address> <file>.gpg
 
 - [Git へ署名キーを伝える](https://docs.github.com/ja/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key) @ docs.github.com
 
-## How to get GPG key information
+## How to get existing GPG key info
 
 ```bash
+gpg --list-secret-keys --keyid-format=sort
 gpg --list-keys --keyid-format short
 ```
 
 ```bash
+gpg --list-secret-keys --keyid-format=long
 gpg --list-keys --keyid-format long
 ```
 
@@ -81,6 +89,7 @@ gpg --show-keys KEINOS.gpg
   ```
 
 - Show Public Key generated from a Secret (sec) Key.
+  The output text is the public key to register to GitHub's GPG key section.
 
   ```shellsession
   $ gpg --armor --export 3AA5C34371567BD2
@@ -92,7 +101,7 @@ gpg --show-keys KEINOS.gpg
 - Show the secret key.
 
   ```shellsession
-  $ gpg --export-secret-keys --armor 3AA5C34371567BD2
+  $ gpg --armor --export-secret-keys 3AA5C34371567BD2
   -----BEGIN PGP PRIVATE KEY BLOCK-----
   ...
   -----END PGP PRIVATE KEY BLOCK-----
