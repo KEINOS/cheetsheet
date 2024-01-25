@@ -56,23 +56,43 @@ gpg --verify --default-key <email@address> <file>.gpg
 ## How to get existing GPG key info
 
 ```bash
-gpg --list-secret-keys --keyid-format=sort
-gpg --list-keys --keyid-format short
+# Public Key
+gpg --list-keys
+gpg --list-keys --keyid-format=long
+gpg --list-keys --keyid-format=short
 ```
 
 ```bash
+# Secret Key
+gpg --list-secret-keys
 gpg --list-secret-keys --keyid-format=long
-gpg --list-keys --keyid-format long
+gpg --list-secret-keys --keyid-format=short
 ```
 
 ## Whow to get the fingerprint of a GPG key
 
 ```bash
-gpg --show-keys --fingerprint KEINOS.gpg
+gpg --list-keys --fingerprint --keyid-format=short
 ```
 
 ```bash
-gpg --show-keys KEINOS.gpg
+gpg --list-keys --fingerprint --keyid-format=short
+/Users/admin/.gnupg/pubring.kbx
+-------------------------------
+pub   ed25519/23FEC570 2024-01-15 [SC]
+   フィンガープリント = 74B7 0607 675F BED0 0951  8600 0E31 BF09 23FE C570
+uid         [  究極  ] KEINOS (ECC-Curve25519-Full_Enc-Sign) <github@keinos.com>
+sub   cv25519/DB6B3F2A 2024-01-15 [E]
+```
+
+## How to upload GPG key to key-server (keys.openpgp.org)
+
+```bash
+gpg --keyserver hkps://keys.openpgp.org --send-keys <finger print>
+```
+
+```bash
+gpg --keyserver hkps://keys.openpgp.org --send-keys 74B70607675FBED0095186000E31BF0923FEC570
 ```
 
 ## How to get current GPG Keys (Public and Private)
@@ -80,7 +100,7 @@ gpg --show-keys KEINOS.gpg
 - List all key IDs. In the below example "`3AA5C34371567BD2`" is the key ID.
 
   ```shellsession
-  $ pg --list-secret-keys --keyid-format=long
+  $ gpg --list-secret-keys --keyid-format=long
   /Users/hubot/.gnupg/secring.gpg
   ------------------------------------
   sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]

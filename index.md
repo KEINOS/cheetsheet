@@ -51,6 +51,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Assign PGP key to git commit](./cheetsheets/gpg.md#assign-pgp-key-to-git-commit)
   * [How to get existing GPG key info](./cheetsheets/gpg.md#how-to-get-existing-gpg-key-info)
   * [Whow to get the fingerprint of a GPG key](./cheetsheets/gpg.md#whow-to-get-the-fingerprint-of-a-gpg-key)
+  * [How to upload GPG key to key\-server (keys\.openpgp\.org)](./cheetsheets/gpg.md#how-to-upload-gpg-key-to-key-server-keysopenpgporg)
   * [How to get current GPG Keys (Public and Private)](./cheetsheets/gpg.md#how-to-get-current-gpg-keys-public-and-private)
 
 * [IPFS](./cheetsheets/ipfs.md#ipfs)
