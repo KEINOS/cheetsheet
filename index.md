@@ -100,6 +100,7 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 * [macOS CheetSheet](./cheetsheets/macos.md#macos-cheetsheet)
   * [Get OS version info](./cheetsheets/macos.md#get-os-version-info)
+  * [How to check current DNS server using](./cheetsheets/macos.md#how-to-check-current-dns-server-using)
   * [How to boot from external drive](./cheetsheets/macos.md#how-to-boot-from-external-drive)
   * [How to check macOS Recovery Partition](./cheetsheets/macos.md#how-to-check-macos-recovery-partition)
   * [Disalbe CSR Utils](./cheetsheets/macos.md#disalbe-csr-utils)

@@ -15,6 +15,12 @@ ProductVersion: 10.15.7
 BuildVersion:   19H1615
 ```
 
+## How to check current DNS server using
+
+```bash
+scutil --dns | grep 'nameserver\[[0-9]*\]'
+``````
+
 ## How to boot from external drive
 
 - Non Apple Keyboards: Press `Alt` key during boot
