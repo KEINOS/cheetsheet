@@ -71,3 +71,11 @@ brew services start <name>
 $ brew services start ipfs
 ...
 ```
+
+## How to create key pari for SSH and sign
+
+```shellsession
+mkdir -p ~/.ssh
+chmod 0755 ~/.ssh
+ssh-keygen -t ed25519 -C "your mail"
+```

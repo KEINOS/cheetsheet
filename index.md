@@ -106,6 +106,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [Disalbe CSR Utils](./cheetsheets/macos.md#disalbe-csr-utils)
   * [Homebrew](./cheetsheets/macos.md#homebrew)
     * [Run as a service](./cheetsheets/macos.md#run-as-a-service)
+  * [How to create key pari for SSH and sign](./cheetsheets/macos.md#how-to-create-key-pari-for-ssh-and-sign)
 
 * [General/Miscellaneous](./cheetsheets/miscellaneous.md#generalmiscellaneous)
   * [Markdown](./cheetsheets/miscellaneous.md#markdown)
