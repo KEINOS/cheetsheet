@@ -17,7 +17,7 @@ NAME_DIR_DOCS="cheetsheets"
 PATH_DIR_RETURN="$(cd "$(pwd)" && pwd)"
 PATH_DIR_SCRIPT="$(cd "$(dirname "${0}")" && pwd)"
 PATH_DIR_REPO_ROOT="$(cd "${PATH_DIR_SCRIPT}/.." && pwd)"
-PATH_FILE_INDEX="${PATH_DIR_REPO_ROOT}/index.md"
+PATH_FILE_INDEX="${PATH_DIR_REPO_ROOT}/${NAME_FILE_INDEX}"
 LF=$(printf '\n_')
 LF=${LF%_}
 HR="---${LF}"
@@ -63,4 +63,4 @@ cd "${PATH_DIR_REPO_ROOT}" || {
 
 } >"${PATH_FILE_INDEX}"
 
-cat "${PATH_FILE_INDEX}" && echo "${HR}\ndone."
+cat "${PATH_FILE_INDEX}" && printf '%s\ndone.' "$HR"

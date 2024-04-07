@@ -9,6 +9,8 @@ This is a memorandum/cheet-sheet for KEINOS.
 
 ## Index
 
+* [Ed25519](./cheetsheets/ed25519.md#ed25519)
+
 * [Git](./cheetsheets/git.md#git)
   * [Append a commit to the previous commit](./cheetsheets/git.md#append-a-commit-to-the-previous-commit)
   * [Create Orphan Branch](./cheetsheets/git.md#create-orphan-branch)
