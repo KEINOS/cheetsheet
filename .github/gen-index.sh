@@ -45,6 +45,10 @@ cd "${PATH_DIR_REPO_ROOT}" || {
     # Add Spanish translation
     printf "%s\n" "[![Español](https://shields.io/badge/-Espa%C3%B1ol-informational)](https://keinos-github-io.translate.goog/cheetsheet/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es \"Leer en español\")"
     printf "%s\n" "[![日本語](https://shields.io/badge/-%E6%97%A5%E6%9C%AC%E8%AA%9E-informational)](https://keinos-github-io.translate.goog/cheetsheet/?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja \"日本語で読む\")"
+
+    # Add stargazers count
+    printf "%s\n" "[![GitHub Repo stars](https://img.shields.io/github/stars/KEINOS/cheetsheet)](https://github.com/KEINOS/cheetsheet \"GitHu Repo\")"
+
     printf "\n"
 
     # Add H1 title
