@@ -38,6 +38,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to check if file exists](./cheetsheets/golang.md#how-to-check-if-file-exists)
   * [How to deal with/mimic io\.Reader](./cheetsheets/golang.md#how-to-deal-withmimic-ioreader)
   * [How to deal with/mimic io\.Writer](./cheetsheets/golang.md#how-to-deal-withmimic-iowriter)
+  * [How to capture os\.Stdout (dealing with/mock/mimic os\.Stdout)](./cheetsheets/golang.md#how-to-capture-osstdout-dealing-withmockmimic-osstdout)
   * [How to deal with/mock/mimic os\.Stdin](./cheetsheets/golang.md#how-to-deal-withmockmimic-osstdin)
   * [How to trim/remove comments](./cheetsheets/golang.md#how-to-trimremove-comments)
   * [How to shuffle a slice](./cheetsheets/golang.md#how-to-shuffle-a-slice)

@@ -645,6 +645,64 @@ func main() {
 
 - [Go Playground](https://go.dev/play/p/8dnTL0Cfjrx)
 
+## How to capture os.Stdout (dealing with/mock/mimic os.Stdout)
+
+Use `os.Pipe()` to capture `os.Stdout` during the function execution.
+
+```go
+package main
+
+import (
+	"fmt"
+	"io"
+	"log"
+	"os"
+)
+
+func main() {
+	output, err := captureOutput(sayHello)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Captured output:", output)
+}
+
+func sayHello() {
+	fmt.Println("Hello, 世界")
+}
+
+func captureOutput(runFn func()) (string, error) {
+	orig := os.Stdout
+
+	r, w, err := os.Pipe()
+	if err != nil {
+		return "", err
+	}
+
+	os.Stdout = w
+
+	// Run the function and capture
+	runFn()
+
+	os.Stdout = orig
+	w.Close()
+
+	out, err := io.ReadAll(r)
+	if err != nil {
+		return "", err
+	}
+
+	return string(out), err
+}
+```
+
+- Virew on [Go Playground](https://go.dev/play/p/QJtBFQinFJc)
+- References:
+  - [How to test a function's output (stdout/stderr) in unit tests](https://stackoverflow.com/a/77151975/18152508) @ StackOverflow
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
+
 ## How to deal with/mock/mimic os.Stdin
 
 ```go
