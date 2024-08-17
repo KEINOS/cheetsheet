@@ -46,6 +46,7 @@ This is a memorandum/cheet-sheet for KEINOS.
   * [How to get an element randomly from a slice](./cheetsheets/golang.md#how-to-get-an-element-randomly-from-a-slice)
   * [How to build static binary](./cheetsheets/golang.md#how-to-build-static-binary)
   * [Get maximum int value available](./cheetsheets/golang.md#get-maximum-int-value-available)
+  * [How to spawn a server for Example test](./cheetsheets/golang.md#how-to-spawn-a-server-for-example-test)
 
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)

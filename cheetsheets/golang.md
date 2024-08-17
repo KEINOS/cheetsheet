@@ -911,3 +911,88 @@ const MinInt = -MaxInt - 1
 ```
 
 [[Back to top](#)]<!-- ---------------------------------------------- -->
+
+## How to spawn a server for Example test
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"io"
+	"log"
+	"net"
+	"net/http"
+	"sync"
+)
+
+func Example() {
+	addr, cancel := spwanTestServer()
+	defer cancel()
+
+	resp, err := http.Get("http://" + addr)
+	if err != nil {
+		log.Fatal("failed to get:", err)
+	}
+
+	defer resp.Body.Close()
+
+	respBody, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Resp:", string(respBody))
+	//
+	// Output:
+	// Resp: hello world!
+}
+
+// spwanTestServer starts a test server that listens on random port and returns
+// the listen address and a cancel function.
+// The cancel function is a cleanup function that gracefully shuts down the
+// server.
+func spwanTestServer() (addr string, cancel func()) {
+	addr = "localhost:0" // choose a random port automatically
+	srv := http.Server{
+		Addr:    addr,
+		Handler: http.HandlerFunc(greet),
+	}
+
+	var wg sync.WaitGroup
+	wg.Add(1)
+
+	go func(srv *http.Server, addr *string, wg *sync.WaitGroup) {
+		listener, err := net.Listen("tcp4", *addr)
+		if err != nil {
+			log.Fatal("listener error:", err)
+		}
+
+		*addr = listener.Addr().String() // Update the address with the actual port
+		srv.Addr = *addr                 // Update the server address
+
+		wg.Done() // Signal that server is open for business
+
+		if err := srv.Serve(listener); err != nil && err != http.ErrServerClosed {
+			log.Fatal("failed to serve:", err)
+		}
+	}(&srv, &addr, &wg)
+
+	wg.Wait()
+
+	return addr, func() {
+		if err := srv.Shutdown(context.TODO()); err != nil {
+			log.Fatal("failed to shutdown:", err)
+		}
+	}
+}
+
+// greet is a simple handler that writes "hello world!" to the response.
+func greet(w http.ResponseWriter, _ *http.Request) {
+	fmt.Fprintf(w, "hello world!\n")
+}
+
+```
+
+[[Back to top](#)]<!-- ---------------------------------------------- -->
