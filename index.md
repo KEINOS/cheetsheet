@@ -13,6 +13,7 @@ This is a memorandum/cheet-sheet for KEINOS.
 * [Ed25519](./cheetsheets/ed25519.md#ed25519)
 
 * [Git](./cheetsheets/git.md#git)
+  * [Update from the remote repository (not upstream)](./cheetsheets/git.md#update-from-the-remote-repository-not-upstream)
   * [Append a commit to the previous commit](./cheetsheets/git.md#append-a-commit-to-the-previous-commit)
   * [Create Orphan Branch](./cheetsheets/git.md#create-orphan-branch)
   * [Rename branch from "master" to "main"](./cheetsheets/git.md#rename-branch-from-master-to-main)
