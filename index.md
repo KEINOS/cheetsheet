@@ -52,6 +52,8 @@ This is a memorandum/cheet-sheet for KEINOS.
 * [GPG (OpenPGP/GnuPG)](./cheetsheets/gpg.md#gpg-openpgpgnupg)
   * [References](./cheetsheets/gpg.md#references)
   * [How to create GPG key pair](./cheetsheets/gpg.md#how-to-create-gpg-key-pair)
+    * [One\-liner with no interaction](./cheetsheets/gpg.md#one-liner-with-no-interaction)
+    * [Interactive](./cheetsheets/gpg.md#interactive)
   * [How to sign a file with GPG key](./cheetsheets/gpg.md#how-to-sign-a-file-with-gpg-key)
   * [How to verify the signed file](./cheetsheets/gpg.md#how-to-verify-the-signed-file)
   * [Assign PGP key to git commit](./cheetsheets/gpg.md#assign-pgp-key-to-git-commit)
