@@ -23,12 +23,14 @@
 # Install GPG on Alpine Linux
 # apk add gpg gpg-agent
 
+myID="MyName <my_name@example.com>"
+
 # gpg --batch --quick-gen-key --passphrase '' <User ID> [algo [usage [expire]]]
-gpg --batch --expert --quick-gen-key --passphrase '' "MyName <my_name@example.com>" default default 0
+gpg --batch --expert --quick-gen-key --passphrase '' "$myID" default default 0
 
 # Export the public key and private key to PEM files
-gpg --armor --export "MyName <my_name@example.com>" > public_key.pem
-gpg --armor --export-secret-keys "MyName <my_name@example.com>" > private_key.pem
+gpg --armor --export "$myID$" > public_key.pem
+gpg --armor --export-secret-keys "$myID" > private_key.pem
 ```
 
 ### Interactive
